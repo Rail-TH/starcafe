@@ -38,72 +38,37 @@ header{
     margin-right: 70px;
     font-family: 'Oranienbaum', serif;
     font-size: 20px;
+    transition: 0.2s;
 }
 
-.li4:hover {
-    animation-name: anim1;
-    animation-duration: 0.1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    animation-timing-function: ease-out;
-}
-
-.li1:hover {
-    animation-name: anim1;
-    animation-duration: 0.1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    animation-timing-function: ease-out;
-}
-
-.li3:hover {
-    animation-name: anim1;
-    animation-duration: 0.1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    animation-timing-function: ease-out;
-}
-
-.li2:hover {
-    animation-name: anim1;
-    animation-duration: 0.1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
-    animation-timing-function: ease-out;
+.li1:hover, .li2:hover, .li3:hover, .li4:hover {
+    transform: scale(1.1);
 }
 
 .reserve{
     display: flex;
     margin-top: 40px;
 }
-.container{
+
+.firstscreenContainer{
     margin-left: 665px;
     cursor: default;
 }
-.main__img{
-    position: absolute;
+
+.firstscreenImg_Container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
 }
-.img4{
-    right: 200px;
-    bottom: -60px;
+
+.firstscreenImg_Container img {
+    object-fit: contain;
 }
-.img3{
-    right: 620px;
-    bottom: -40px;
-}
-.img2{
-    left: 550px;
-    bottom: -140px;
-}
-.img1{
-    left: 200px;
-    bottom: -70px;
-}
-.h2{
+
+.secondscreenHead{
     font-family: 'Oranienbaum', serif;
     font-weight: 100;
     left: 100px;
@@ -113,23 +78,41 @@ header{
     cursor: default;
 }
 
-.h2_book {
+.thirdscreenInfo_Head {
     margin: 0;
     margin-bottom: 20px;
+    font-family: 'Oranienbaum', serif;
+    font-weight: 100;
+    font-size: 58px;
+    cursor: default;
 }
 
-.h2_menu {
+.thirdscreenInfoBook_Head {
+    margin: 0;
+    margin-bottom: 50px;
+    font-family: 'Oranienbaum', serif;
+    font-weight: 100;
+    font-size: 58px;
+    cursor: default;
+    text-align: center;
+}
+
+.menuHead {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     margin-top: 180px;
+    font-family: 'Oranienbaum', serif;
+    font-weight: 100;
+    font-size: 58px;
+    cursor: default;
 }
 
-.div_object {
+.menuSection_column {
     width: 406px;
 }
 
-.div_group {
+.menuSection {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -138,7 +121,7 @@ header{
     margin-right: auto;
 }
 
-.h3 {
+.firstscreenAdress {
     margin: 0;
     cursor: default;
     text-align: right;
@@ -156,14 +139,16 @@ header{
     font-size: 22px;
 }
 
-.main_price {
+.menuPoint {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 380px;
 }
 
-.more {
+.viem {
+    display: flex;
+    margin-top: 40px;
     flex-direction: row;
     justify-content: center;
 }
@@ -178,14 +163,14 @@ header{
     background-color: #000000;
 }
 
-.book {
+.thirdscreen {
     background-color: #ffe7c8;
     margin-top: 200px;
-    height: 155vh;
+    height: 145vh;
     padding-top: 200px;
 }
 
-.book_reserve {
+.bookReserve {
     background-color: white;
     width: 300px;
     margin-left: auto;
@@ -195,23 +180,28 @@ header{
     justify-content: center;
     height: 75px;
     align-items: center;
+    margin-top: 40px;
 }
 
 .arrow_book {
     width: 25px;
 }
 
-.book_content {
+.thirdscreenInfo_Content {
     margin: 0;
     text-align: left;
     margin-bottom: 20px;
+    cursor: default;
+    font-size: 16;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .video_2 {
     width: 594px;
 }
 
-.book_main {
+.thirdscreenMain {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -220,22 +210,33 @@ header{
     margin-left: auto;
 }
 
-.book_desc {
+.thirdscreenInfoBook_Desc {
     text-align: center;
+    margin: 0;
+    cursor: default;
+    font-size: 16;
+    font-weight: 100;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.book_main_2 {
+.thirdscreenInfo_Main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.menu_point {
+.menuPoint_Head {
     text-align: left;
     font-size: 22px;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
+    margin: 0;
+    cursor: default;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .menu_point_desc {
@@ -244,10 +245,11 @@ header{
     font-size: 14px;
 }
 
-.desc {
+.menuDesc {
     margin-left: auto;
     margin-right: auto;
     width: 777px;
+    font-weight: 100;
     text-align: center;
 }
 
@@ -257,16 +259,20 @@ header{
     margin-bottom: 30px;
 }
 
-.breakfast {
+.menuSection_Head {
     font-size: 48px;
     margin-left: 450px;
     margin-top: 150px;
+    font-family: 'Oranienbaum', serif;
+    font-weight: 100;
+    cursor: default;
 }
 
-.div_img {
+.thirdscreenImages {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     margin-top: 180px;
 }
 
@@ -274,35 +280,35 @@ header{
     object-fit: contain;
 }
 
-.text1{
+.secondscreenTexts {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 42%;
+}
+
+.secondscreenText{
     font-family: 'Open Sans', sans-serif;
     font-size: 16;
     font-weight: 100;
-    position: absolute;
-    left: 540px;
     cursor: default;
 }
-.text2{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16;
-    font-weight: 100;
-    position: absolute;
-    right: 540px;
-    cursor: default;
-}
+
 .video{
     margin-left: auto;
     margin-right: auto;
-    margin-top: 250px;
+    margin-top: 100px;
     display: block
 }
-.maps{
+
+.footerMaps{
     margin-left: auto;
     margin-right: auto;
     margin-top: 300px;
     display: block
 }
-.number{
+.footerNumber{
     font-family: 'Oranienbaum', serif;
     font-weight: 100;
     font-size: 58px;
@@ -310,7 +316,7 @@ header{
     margin-top: 100px;
     cursor: default;
 }
-.address{
+.footerAdress{
     font-family: 'Open Sans', sans-serif;
     font-size: 16;
     font-weight: 100;
@@ -318,7 +324,7 @@ header{
     text-align: center;
     cursor: default;
 }
-.info1{
+.footerInfo_1{
     font-family: 'Open Sans', sans-serif;
     font-size: 16;
     font-weight: 100;
@@ -326,17 +332,11 @@ header{
     margin-top: 50px;
     cursor: default;
 }
-.info2{
+.footerInfo_2{
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 100;
     text-align: center;
     margin-top: 50px;
     cursor: default;
-}
-
-@keyframes anim1{
-    100%{
-        transform: scale(1.1);
-    }
 }
